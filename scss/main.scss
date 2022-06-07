@@ -77,7 +77,7 @@ main {
     width: 100vw;
     position: relative;
     overflow: hidden;
-    
+
     .night{
       width: 200%;
       height: 200%;
@@ -85,7 +85,12 @@ main {
       top: -25%;
       left: -50%;
     }
-    overflow: hidden;
+
+    .icons{
+      // position: relative;
+      z-index: 300;
+    }
+
     h1 {
       margin-top: 20vh;
     }
