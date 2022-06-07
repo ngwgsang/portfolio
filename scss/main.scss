@@ -52,6 +52,9 @@ main {
   padding: 4rem;
   // height: 100%;
   min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction:  column;
+  gap: 2rem;
 
   .icons {
     margin-top: 1rem;
@@ -78,9 +81,10 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
+    'bioimage bio bio';
+    // 'skill1 skill2 skill3';
   grid-template-columns: repeat(3, 1fr);
+
 
   .bio-image {
     grid-area: bioimage;
@@ -94,24 +98,27 @@ main {
     font-size: 1.5rem;
   }
 
-  .job-1 {
-    grid-area: job1;
-  }
+}
 
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+.skill-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: lighten($primary-color, 5);
+  padding: 3rem 1rem;
+  border-radius: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  a{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.6rem;
   }
 }
+
+
+
 
 // Work/Projects
 .projects {
