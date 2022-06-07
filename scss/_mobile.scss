@@ -109,8 +109,20 @@
       height: 10rem;
     }
   }
-
   .projects {
     grid-template-columns: 1fr;
+  }
+  #contact{
+    .boxes{
+      div{
+        padding: 0.5rem;
+      }
+      .email-label{
+        font-size: 1.5rem;
+      }
+      .email{
+        font-size: 1rem;
+      }
+    }
   }
 }
