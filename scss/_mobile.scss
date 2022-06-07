@@ -10,7 +10,7 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
 }
 
 // Tablets & Small Laptops
@@ -22,6 +22,17 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+    }
+    .bio-image{
+      width: 20rem;
+      height: 20rem;
+    }
+    .bio{
+      padding: 1rem;
+    }
+    .my-name{
+      font-size: 4rem;
+      line-height: 1.2;
     }
   }
 
@@ -73,13 +84,29 @@
 @include mediaSm {
   main {
     padding: 2rem;
-    #home h1 {
-      margin-top: 10vh;
+    #home {
+      h1 {
+        margin-top: 6vh;
+      }
+    }
+    .my-name{
+      font-size: 3rem;
+      line-height: 0.8;
+    }
+    .index-heading{
+      margin-bottom: 0;
+    }
+    .icons{
+      margin-top: 0;
     }
 
     .lg-heading {
       margin-top:1rem;
       font-size: 5rem;
+    }
+    .bio-image{
+      width: 10rem;
+      height: 10rem;
     }
   }
 
